@@ -1,0 +1,195 @@
+<%
+function gaScreenView (vcard) {
+  const TEMPLATE_NAME = '南投縣政府-2023/07/19'
+  let hash = CryptoJS.HmacMD5(JSON.stringify(vcard), TEMPLATE_NAME)
+  hash = CryptoJS.enc.Base64.stringify(hash).replace(/[+/=]/g, c => _.get({ '+': '-', '/': '_', '=': '' }, c))
+  return gtag.mpCollectUrl({
+    client_id: gtagClientId,
+    events: [{
+      name: 'template_impression',
+      params: {
+        session_id: gtagSessionId,
+        share_by: profile.userId ?? 'unknown',
+        template_name: TEMPLATE_NAME,
+        vcard_hash: hash,
+        vcard_name: vcard.name,
+      },
+    }],
+  })
+}
+%>
+
+[
+  {
+    {
+  "altText": "請在手機上查看「${vcard.name}」的名片。",
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://www.nantou.gov.tw/upload/42531_f5.png",
+            "size": "5xl",
+            "aspectMode": "cover",
+            "aspectRatio": "150:196",
+            "gravity": "center",
+            "flex": 1
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": []
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "${vcard.title}",
+                "weight": "bold",
+                "offsetEnd": "none",
+                "gravity": "bottom"
+              },
+              {
+                "type": "text",
+                "text": "${vcard.name}",
+                "size": "xxl",
+                "weight": "bold",
+                "align": "start",
+                "flex": 1
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "${vcard.phone}",
+                "margin": "none",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "tel:0912023954"
+                },
+                "size": "md",
+                "position": "relative",
+                "align": "start",
+                "gravity": "center",
+                "flex": 3,
+                "weight": "regular"
+              }
+            ],
+            "cornerRadius": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "${vcard.email}",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "mailto:wei777@nantou.gov.tw"
+                },
+                "weight": "regular"
+              }
+            ]
+          }
+        ],
+        "spacing": "md",
+        "paddingAll": "20px",
+        "justifyContent": "center"
+      }
+    ],
+    "paddingAll": "0px"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "南投市中興路660號",
+        "color": "#000000",
+        "weight": "regular",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://www.google.com/maps/place/%E5%8D%97%E6%8A%95%E7%B8%A3%E6%94%BF%E5%BA%9C/@23.9026792,120.6879342,17z/data=!3m1!4b1!4m6!3m5!1s0x3469321f9f2c156d:0x3f0a65672ed2ae4b!8m2!3d23.9026792!4d120.6905091!16s%2Fm%2F010hpdrr?entry=ttu&openExternalBrowser=1"
+        }
+      },
+      {
+        "type": "text",
+        "text": "049-2246436",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "tel:0492246436"
+        },
+        "weight": "regular",
+        "color": "#000000"
+      },
+      {
+        "type": "text",
+        "text": "https://www.nantou.gov.tw",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://www.nantou.gov.tw"
+        },
+        "color": "#000000",
+        "weight": "regular"
+      }
+    ],
+    "borderWidth": "none",
+    "borderColor": "#000000",
+    "alignItems": "flex-start",
+    "justifyContent": "center",
+    "cornerRadius": "md",
+    "flex": 0,
+    "spacing": "md",
+    "margin": "md",
+    "maxWidth": "250px",
+    "offsetStart": "10px"
+  },
+  "styles": {
+    "footer": {
+      "backgroundColor": "#FFFFFF",
+      "separatorColor": "#55555555",
+      "separator": true
+    }
+  }
+},
+  {
+    "text": "貼心提醒：名片上有連結可以開啟",
+    "type": "text"
+  }
+]
