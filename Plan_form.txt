@@ -70,7 +70,7 @@ function escapeStr (str) {
             "contents": [
               {
                 "type": "text",
-                "text": "計畫處分析師",
+                "text": "計畫處 分析師",
                 "weight": "bold",
                 "offsetEnd": "none",
                 "gravity": "bottom"
@@ -91,34 +91,11 @@ function escapeStr (str) {
             "contents": [
               {
                 "type": "text",
-                "text": "049-2246436",
-                "margin": "none",
-                "action": {
-                  "type": "uri",
-                  "label": "action",
-                  "uri": "tel:0492246436"
-                },
-                "size": "md",
-                "position": "relative",
-                "align": "start",
-                "gravity": "center",
-                "flex": 3,
-                "weight": "regular"
-              }
-            ],
-            "cornerRadius": "sm"
-          },
-          {
-            "type": "box",
-            "layout": "horizontal",
-            "contents": [
-              {
-                "type": "text",
                 "text": "Liang0112@nantou.gov.tw",
                 "action": {
                   "type": "uri",
                   "label": "action",
-                  "uri": "mailto:Liang0112@nantou.gov.tw"
+                  "uri": "mailto:wei777@nantou.gov.tw"
                 },
                 "weight": "regular"
               }
