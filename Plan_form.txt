@@ -95,7 +95,7 @@ function escapeStr (str) {
                 "action": {
                   "type": "uri",
                   "label": "action",
-                  "uri": "mailto:wei777@nantou.gov.tw"
+                  "uri": "mailto:Liang0112@nantou.gov.tw"
                 },
                 "weight": "regular"
               }
