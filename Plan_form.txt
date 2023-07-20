@@ -70,14 +70,14 @@ function escapeStr (str) {
             "contents": [
               {
                 "type": "text",
-                "text": "計畫處處長",
+                "text": "計畫處分析師",
                 "weight": "bold",
                 "offsetEnd": "none",
                 "gravity": "bottom"
               },
               {
                 "type": "text",
-                "text": "邱紹偉",
+                "text": "陳亮廷",
                 "size": "xxl",
                 "weight": "bold",
                 "align": "start",
@@ -91,12 +91,12 @@ function escapeStr (str) {
             "contents": [
               {
                 "type": "text",
-                "text": "0979-592777",
+                "text": "049-2246436",
                 "margin": "none",
                 "action": {
                   "type": "uri",
                   "label": "action",
-                  "uri": "tel:0912023954"
+                  "uri": "tel:0492246436"
                 },
                 "size": "md",
                 "position": "relative",
@@ -114,11 +114,11 @@ function escapeStr (str) {
             "contents": [
               {
                 "type": "text",
-                "text": "wei777@nantou.gov.tw",
+                "text": "Liang0112@nantou.gov.tw",
                 "action": {
                   "type": "uri",
                   "label": "action",
-                  "uri": "mailto:wei777@nantou.gov.tw"
+                  "uri": "mailto:Liang0112@nantou.gov.tw"
                 },
                 "weight": "regular"
               }
@@ -144,7 +144,7 @@ function escapeStr (str) {
         "action": {
           "type": "uri",
           "label": "action",
-          "uri": "https://www.nantou.gov.tw"
+          "uri": "https://goo.gl/maps/KL3FBUMvrmWZLnNa6"
         }
       },
       {
