@@ -17,17 +17,19 @@ function gaScreenView (vcard) {
     }],
   })
 }
+function escapeStr (str) {
+  if (!_.isString(str)) return str
+  return JSON.stringify(str).slice(1, -1)
+}
 %>
 
-[
-  {
-    {
+{
   "altText": "請在手機上查看「${vcard.name}」的名片。",
   "type": "bubble",
   "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
+  "type": "box",
+  "layout": "vertical",
+  "contents": [
       {
         "type": "box",
         "layout": "horizontal",
