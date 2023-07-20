@@ -19,13 +19,12 @@ function gaScreenView (vcard) {
 }
 %>
 [
-  {
-
+{
   "type": "bubble",
   "body": {
-  "type": "box",
-  "layout": "vertical",
-  "contents": [
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
       {
         "type": "box",
         "layout": "horizontal",
@@ -67,14 +66,14 @@ function gaScreenView (vcard) {
             "contents": [
               {
                 "type": "text",
-                "text": "${vcard.title}",
+                "text": "計畫處處長",
                 "weight": "bold",
                 "offsetEnd": "none",
                 "gravity": "bottom"
               },
               {
                 "type": "text",
-                "text": "${vcard.name}",
+                "text": "邱紹偉",
                 "size": "xxl",
                 "weight": "bold",
                 "align": "start",
@@ -88,7 +87,7 @@ function gaScreenView (vcard) {
             "contents": [
               {
                 "type": "text",
-                "text": "${vcard.phone}",
+                "text": "0979-592777",
                 "margin": "none",
                 "action": {
                   "type": "uri",
@@ -111,7 +110,7 @@ function gaScreenView (vcard) {
             "contents": [
               {
                 "type": "text",
-                "text": "${vcard.email}",
+                "text": "wei777@nantou.gov.tw",
                 "action": {
                   "type": "uri",
                   "label": "action",
@@ -128,7 +127,6 @@ function gaScreenView (vcard) {
       }
     ],
     "paddingAll": "0px"
-  
   },
   "footer": {
     "type": "box",
@@ -142,7 +140,7 @@ function gaScreenView (vcard) {
         "action": {
           "type": "uri",
           "label": "action",
-          "uri": ""
+          "uri": "https://www.google.com/maps/place/%E5%8D%97%E6%8A%95%E7%B8%A3%E6%94%BF%E5%BA%9C/@23.9026792,120.6879342,17z/data=!3m1!4b1!4m6!3m5!1s0x3469321f9f2c156d:0x3f0a65672ed2ae4b!8m2!3d23.9026792!4d120.6905091!16s%2Fm%2F010hpdrr?entry=ttu&openExternalBrowser=1"
         }
       },
       {
@@ -186,9 +184,5 @@ function gaScreenView (vcard) {
       "separator": true
     }
   }
-},
-{
-    "text": "貼心提醒：名片上有連結可以開啟",
-    "type": "text"
 }
 ]
