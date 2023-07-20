@@ -144,7 +144,7 @@ function escapeStr (str) {
         "action": {
           "type": "uri",
           "label": "action",
-          "uri": ""
+          "uri": "https://www.nantou.gov.tw"
         }
       },
       {
