@@ -24,7 +24,6 @@ function escapeStr (str) {
 %>
 
 {
-
   "type": "bubble",
   "body": {
     "type": "box",
@@ -71,14 +70,14 @@ function escapeStr (str) {
             "contents": [
               {
                 "type": "text",
-                "text": "計畫處 分析師",
+                "text": "計畫處 ",
                 "weight": "bold",
                 "offsetEnd": "none",
                 "gravity": "bottom"
               },
               {
                 "type": "text",
-                "text": "陳亮廷",
+                "text": "蔡承靜",
                 "size": "xxl",
                 "weight": "bold",
                 "align": "start",
@@ -96,7 +95,7 @@ function escapeStr (str) {
                 "action": {
                   "type": "uri",
                   "label": "action",
-                  "uri": "mailto:Liang0112@nantou.gov.tw"
+                  "uri": "mailto:wei777@nantou.gov.tw"
                 },
                 "weight": "regular"
               }
@@ -116,17 +115,6 @@ function escapeStr (str) {
     "contents": [
       {
         "type": "text",
-        "text": "南投市中興路660號",
-        "color": "#000000",
-        "weight": "regular",
-        "action": {
-          "type": "uri",
-          "label": "action",
-          "uri": "https://goo.gl/maps/KL3FBUMvrmWZLnNa6"
-        }
-      },
-      {
-        "type": "text",
         "text": "049-2246436",
         "action": {
           "type": "uri",
@@ -135,6 +123,17 @@ function escapeStr (str) {
         },
         "weight": "regular",
         "color": "#000000"
+      },
+      {
+        "type": "text",
+        "text": "南投市中興路660號",
+        "color": "#000000",
+        "weight": "regular",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://goo.gl/maps/KL3FBUMvrmWZLnNa6"
+        }
       },
       {
         "type": "text",
