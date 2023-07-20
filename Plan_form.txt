@@ -18,10 +18,9 @@ function gaScreenView (vcard) {
   })
 }
 %>
-
 [
   {
-  "altText": "請在手機上查看「${vcard.name}」的名片。",
+
   "type": "bubble",
   "body": {
   "type": "box",
@@ -143,7 +142,7 @@ function gaScreenView (vcard) {
         "action": {
           "type": "uri",
           "label": "action",
-          "uri": "https://www.google.com/maps/place/%E5%8D%97%E6%8A%95%E7%B8%A3%E6%94%BF%E5%BA%9C/@23.9026792,120.6879342,17z/data=!3m1!4b1!4m6!3m5!1s0x3469321f9f2c156d:0x3f0a65672ed2ae4b!8m2!3d23.9026792!4d120.6905091!16s%2Fm%2F010hpdrr?entry=ttu&openExternalBrowser=1"
+          "uri": ""
         }
       },
       {
