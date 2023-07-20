@@ -17,13 +17,10 @@ function gaScreenView (vcard) {
     }],
   })
 }
-function escapeStr (str) {
-  if (!_.isString(str)) return str
-  return JSON.stringify(str).slice(1, -1)
-}
 %>
 
-{
+[
+  {
   "altText": "請在手機上查看「${vcard.name}」的名片。",
   "type": "bubble",
   "body": {
@@ -190,8 +187,8 @@ function escapeStr (str) {
     }
   }
 },
-  {
+{
     "text": "貼心提醒：名片上有連結可以開啟",
     "type": "text"
-  }
+}
 ]
