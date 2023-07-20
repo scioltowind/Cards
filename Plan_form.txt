@@ -17,9 +17,12 @@ function gaScreenView (vcard) {
     }],
   })
 }
+function escapeStr (str) {
+  if (!_.isString(str)) return str
+  return JSON.stringify(str).slice(1, -1)
+}
 %>
 
-[
 {
   "type": "bubble",
   "body": {
@@ -186,4 +189,3 @@ function gaScreenView (vcard) {
     }
   }
 }
-]
