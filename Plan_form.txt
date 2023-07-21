@@ -25,38 +25,30 @@ function escapeStr (str) {
 
 {
   "type": "bubble",
+  "size": "giga",
   "body": {
     "type": "box",
     "layout": "vertical",
     "contents": [
       {
         "type": "box",
-        "layout": "horizontal",
+        "layout": "vertical",
         "contents": [
           {
             "type": "image",
-            "url": "https://www.nantou.gov.tw/upload/42531_f5.png",
-            "size": "5xl",
-            "aspectMode": "cover",
-            "aspectRatio": "150:196",
-            "gravity": "center",
-            "flex": 1
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": []
-              },
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": []
-              }
-            ]
+            "url": "https://www.vac.gov.tw/xslGip/Unit110/images/000342a3006c40759a6278577720988d.png",
+            "size": "full",
+            "aspectMode": "fit",
+            "aspectRatio": "100:20",
+            "gravity": "top",
+            "flex": 1,
+            "margin": "none",
+            "animated": true,
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "http://linecorp.com/"
+            }
           }
         ]
       },
@@ -70,18 +62,20 @@ function escapeStr (str) {
             "contents": [
               {
                 "type": "text",
-                "text": "計畫處 ",
-                "weight": "bold",
-                "offsetEnd": "none",
-                "gravity": "bottom"
-              },
-              {
-                "type": "text",
                 "text": "蔡承靜",
                 "size": "xxl",
                 "weight": "bold",
+                "align": "center",
+                "flex": 1,
+                "decoration": "none",
+                "adjustMode": "shrink-to-fit"
+              },
+              {
+                "type": "text",
+                "text": "就業輔導員",
+                "position": "relative",
                 "align": "start",
-                "flex": 1
+                "gravity": "bottom"
               }
             ]
           },
@@ -91,15 +85,38 @@ function escapeStr (str) {
             "contents": [
               {
                 "type": "text",
-                "text": "Liang0112@nantou.gov.tw",
+                "text": "電話：049-2222036#48",
                 "action": {
                   "type": "uri",
                   "label": "action",
-                  "uri": "mailto:wei777@nantou.gov.tw"
+                  "uri": "tel:049-2222036,48"
                 },
                 "weight": "regular"
+              },
+              {
+                "type": "text",
+                "text": "FAX:049-2238200",
+                "align": "end"
               }
             ]
+          },
+          {
+            "type": "text",
+            "text": "地址：南投市民族路505號",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://goo.gl/maps/urUPewuf4DuwTRKP6"
+            }
+          },
+          {
+            "type": "text",
+            "text": "E-Mail：n222036@gmail.com",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "mailto:n222036@gmail.com"
+            }
           }
         ],
         "spacing": "md",
@@ -109,59 +126,13 @@ function escapeStr (str) {
     ],
     "paddingAll": "0px"
   },
-  "footer": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "text": "049-2246436",
-        "action": {
-          "type": "uri",
-          "label": "action",
-          "uri": "tel:0492246436"
-        },
-        "weight": "regular",
-        "color": "#000000"
-      },
-      {
-        "type": "text",
-        "text": "南投市中興路660號",
-        "color": "#000000",
-        "weight": "regular",
-        "action": {
-          "type": "uri",
-          "label": "action",
-          "uri": "https://goo.gl/maps/KL3FBUMvrmWZLnNa6"
-        }
-      },
-      {
-        "type": "text",
-        "text": "https://www.nantou.gov.tw",
-        "action": {
-          "type": "uri",
-          "label": "action",
-          "uri": "https://www.nantou.gov.tw"
-        },
-        "color": "#000000",
-        "weight": "regular"
-      }
-    ],
-    "borderWidth": "none",
-    "borderColor": "#000000",
-    "alignItems": "flex-start",
-    "justifyContent": "center",
-    "cornerRadius": "md",
-    "flex": 0,
-    "spacing": "md",
-    "margin": "md",
-    "maxWidth": "250px",
-    "offsetStart": "10px"
-  },
   "styles": {
+    "header": {
+      "separator": false
+    },
     "footer": {
-      "backgroundColor": "#FFFFFF",
-      "separatorColor": "#55555555",
+      "backgroundColor": "#FF9955",
+      "separatorColor": "#335566",
       "separator": true
     }
   }
