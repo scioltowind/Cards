@@ -14,26 +14,12 @@ function gaScreenView (vcard) {
         share_by: profile.userId ?? 'unknown',
         template_name: TEMPLATE_NAME,
         vcard_hash: hash,
-        vcard_name: _.get(vcard, 'cards.0.title'),
+        vcard_name: _.get(vcard, 'cards.title'),
       },
     }],
   })
 }
-function renderBtn (ctx) {
-  const { btn, vcard } = ctx
-  const uri = _.trim(btn.link || DEFAULT_LINK)
-  return {
-    color: btn.color || '#17c950',
-    height: vcard.btnHeight || 'md',
-    style: btn.style || 'primary',
-    type: 'button',
-    action: {
-      label: btn.text || '預設按鈕文字',
-      type: 'uri',
-      uri,
-    },
-  }
-}
+
 function renderCard (ctx) {
   const { card, cardIdx, vcard } = ctx
   const uri = _.trim(card.link || DEFAULT_LINK)
