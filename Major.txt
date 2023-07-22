@@ -1,0 +1,206 @@
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "計畫處 處長",
+                "size": "xl",
+                "weight": "bold",
+                "align": "center",
+                "gravity": "bottom"
+              }
+            ],
+            "offsetTop": "60px",
+            "maxHeight": "50px",
+            "paddingAll": "xs"
+          },
+          {
+            "type": "image",
+            "url": "https://www.nantou.gov.tw/upload/42531_f5.png",
+            "size": "full",
+            "aspectMode": "fit",
+            "aspectRatio": "150:80",
+            "gravity": "top",
+            "flex": 1,
+            "offsetTop": "none",
+            "offsetBottom": "none",
+            "align": "end",
+            "offsetStart": "xxl"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "邱 紹 偉",
+                "size": "4xl",
+                "weight": "bold",
+                "align": "center",
+                "flex": 1
+              },
+              {
+                "type": "text",
+                "text": "0979-592-777",
+                "align": "center",
+                "size": "25px",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "tel:0979592777"
+                }
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "南投縣政府",
+                    "color": "#0000bb",
+                    "weight": "bold",
+                    "size": "20px",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "https://www.nantou.gov.tw"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "text": "NANTOU COUNTY GOVERNMENT",
+                    "color": "#0000bb",
+                    "size": "12px",
+                    "align": "start",
+                    "gravity": "bottom",
+                    "offsetTop": "1px",
+                    "weight": "bold",
+                    "offsetBottom": "xl"
+                  }
+                ],
+                "offsetTop": "1px",
+                "offsetStart": "1px",
+                "offsetEnd": "10px",
+                "paddingBottom": "xl",
+                "paddingAll": "none",
+                "paddingStart": "xl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "540225 南投市中興路660號",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://goo.gl/maps/2hr29e2avobtdRL37"
+                }
+              },
+              {
+                "type": "text",
+                "text": "電話 049-222-2106#2100",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "tel:0492222106,2100"
+                }
+              },
+              {
+                "type": "text",
+                "text": "傳真 049-220-2448"
+              },
+              {
+                "type": "text",
+                "text": "wei777@nantou.gov.tw",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "mailto:wei777@nantou.gov.tw"
+                }
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": []
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": []
+              }
+            ],
+            "spacing": "sm",
+            "margin": "none",
+            "paddingStart": "xl"
+          }
+        ],
+        "paddingAll": "xs",
+        "spacing": "md",
+        "offsetTop": "none"
+      },
+      {
+        "type": "separator",
+        "color": "#000000"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://i.imgur.com/62yiL0P.jpg",
+            "size": "full",
+            "align": "start",
+            "margin": "none",
+            "aspectMode": "fit",
+            "gravity": "top",
+            "aspectRatio": "30:20",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://www.nantou.gov.tw/big5/content.asp?dptid=376480000AU210000&cid=126&cid1=351"
+            }
+          }
+        ],
+        "offsetTop": "3px",
+        "backgroundColor": "#0000BB",
+        "offsetStart": "3px",
+        "offsetBottom": "3px",
+        "offsetEnd": "3px"
+      }
+    ],
+    "paddingAll": "none",
+    "borderWidth": "none",
+    "borderColor": "#0000BB",
+    "cornerRadius": "md",
+    "spacing": "none"
+  },
+  "size": "giga",
+  "styles": {
+    "footer": {
+      "backgroundColor": "#FFFFFF",
+      "separatorColor": "#55555555"
+    }
+  }
+}
