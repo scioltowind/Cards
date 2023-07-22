@@ -38,7 +38,7 @@ function renderCard(ctx) {
             url: 'https://imgur.com/z8tYckP',
             size: 'full',
             aspectMode: 'fit',
-            aspectRatio: '100:20",
+            aspectRatio: '100:20',
             grayity: 'top',
             margin: 'none',
             animated: true,
@@ -62,5 +62,5 @@ function renderCarousel (ctx) {
     },
   }
 }
-print(JSON.stringify(renderCarousel({ vcard })))
+print(JSON.stringify(renderCard({ vcard })))
 %>
