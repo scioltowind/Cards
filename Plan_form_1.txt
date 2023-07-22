@@ -90,7 +90,7 @@ function escapeStr (str) {
           },
           {
             "type": "text",
-            "text": "FAX:049-2238200"
+            "text": "FAX：049-2238200"
           },
           {
             "type": "text",
