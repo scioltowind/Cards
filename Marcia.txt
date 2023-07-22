@@ -35,7 +35,7 @@ function renderCard(ctx) {
         "contents": [
           {
             "type": "image",
-            "url": "https://hackmd.io/_uploads/S1tjssOc3.png",
+            "url": "https://i.imgur.com/z8tYckP.png",
             "size": "full",
             "aspectMode": "fit",
             "aspectRatio": "100:20",
