@@ -38,7 +38,6 @@ function renderCard (ctx) {
   const { card, cardIdx, vcard } = ctx
   const uri = _.trim(card.link || DEFAULT_LINK)
   return {
-{
   "type": "bubble",
   altText: `這是蔡承靜的電子名片，名片上有連結可以開啟。`,
   "size": "mega",
