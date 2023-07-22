@@ -49,65 +49,8 @@ function renderCard(ctx) {
             }
           }]
         }]
-       },
-      {
-        type: 'box',
-        layout: 'vertical',
-        contents: [
-        {
-          type: 'box',
-          layout: 'horizontal',
-          contents: [
-          {
-            type: 'text',
-            text: '蔡承靜',
-            size: 'xxl',
-            weight: 'bold',
-            align: 'center'
-          },
-          {
-            type: 'text',
-            text: '就業輔導員',
-            position: 'relative',
-            align: 'start',
-            gravity: 'bottom'
-          }
-          ]
-         },
-         {
-          type: 'text',
-          text: '電話：049-2222036#48',
-          action: {
-              type: 'uri',
-              label: 'action',
-              uri: 'tel:049-2222036,48'
-          }
-         },
-        {
-           type: 'text',
-           text: 'FAX：049-2238200'          
-         },
-        {
-           type: 'text',
-           text: '地址：南投市民族路505號',
-           action: {
-              type: 'uri',
-              label: 'action',
-              uri: 'https://goo.gl/maps/urUPewuf4DuwTRKP6'
-            }
-          },
-          {
-            type: 'text',
-            text: 'E-Mail：n222036@gmail.com',
-            action: {
-              type: 'uri',
-              label: 'action',
-              uri: 'mailto:n222036@gmail.com'
-            }
-          }
-         ]       
+       }     
         }     
       }
-}
 print(JSON.stringify(renderCard()))
 %>
