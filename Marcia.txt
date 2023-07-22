@@ -141,5 +141,5 @@ function renderCarousel (ctx) {
     },
   }
 }
-print(JSON.stringify(renderCard({ vcard })))
+print(JSON.stringify(renderCarousel ({ vcard })))
 %>
