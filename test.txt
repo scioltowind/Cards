@@ -1,6 +1,6 @@
 <%
 /* global vcard */
-const DEFAULT_LINK = 'https://taichunmin.idv.tw/liff-businesscard/'
+const DEFAULT_LINK = 'https://nantou.gov.tw'
 function gaScreenView (vcard) {
   const TEMPLATE_NAME = '多頁訊息1-2021/06/20'
   let hash = CryptoJS.HmacMD5(JSON.stringify(vcard), TEMPLATE_NAME)
@@ -19,117 +19,92 @@ function gaScreenView (vcard) {
     }],
   })
 }
-
+function renderBtn (ctx) {
+  const { btn, vcard } = ctx
+  const uri = _.trim(btn.link || DEFAULT_LINK)
+  return {
+    color: btn.color || '#17c950',
+    height: vcard.btnHeight || 'md',
+    style: btn.style || 'primary',
+    type: 'button',
+    action: {
+      label: btn.text || '預設按鈕文字',
+      type: 'uri',
+      uri,
+    },
+  }
+}
 function renderCard (ctx) {
   const { card, cardIdx, vcard } = ctx
   const uri = _.trim(card.link || DEFAULT_LINK)
   return {
-  "type": "bubble",
-  "size": "mega",
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://hackmd.io/_uploads/S1tjssOc3.png",
-            "size": "full",
-            "aspectMode": "fit",
-            "aspectRatio": "100:20",
-            "gravity": "top",
-            "flex": 1,
-            "margin": "none",
-            "animated": true,
-            "action": {
-              "type": "uri",
-              "label": "action",
-              "uri": "https://www.vac.gov.tw/mp-110.html"
-            }
-          }
-        ]
+    type: 'bubble',
+    hero: {
+      animated: cardIdx < 10,
+      aspectMode: 'cover',
+      aspectRatio: vcard.ratio || '20:13',
+      size: 'full',
+      type: 'image',
+      url: card.image || '',
+      action: {
+        type: 'uri',
+        uri,
       },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "horizontal",
-            "contents": [
-              {
-                "type": "text",
-                "text": "蔡承靜",
-                "size": "xxl",
-                "weight": "bold",
-                "align": "center",
-                "flex": 1,
-                "decoration": "none",
-                "adjustMode": "shrink-to-fit"
-              },
-              {
-                "type": "text",
-                "text": "就業輔導員",
-                "position": "relative",
-                "align": "start",
-                "gravity": "bottom"
-              }
-            ]
-          },
-          {
-            "type": "text",
-            "text": "電話：049-2222036#48",
-            "action": {
-              "type": "uri",
-              "label": "action",
-              "uri": "tel:049-2222036,48"
-            }
-          },
-          {
-            "type": "text",
-            "text": "FAX：049-2238200"
-          },
-          {
-            "type": "text",
-            "text": "地址：南投市民族路505號",
-            "action": {
-              "type": "uri",
-              "label": "action",
-              "uri": "https://goo.gl/maps/urUPewuf4DuwTRKP6"
-            }
-          },
-          {
-            "type": "text",
-            "text": "E-Mail：n222036@gmail.com",
-            "action": {
-              "type": "uri",
-              "label": "action",
-              "uri": "mailto:n222036@gmail.com"
-            }
-          }
-        ],
-        "spacing": "md",
-        "paddingAll": "20px",
-        "justifyContent": "center"
-      }
-    ],
-    "paddingAll": "0px"
-  },
-  "styles": {
-    "header": {
-      "separator": false
     },
-    "footer": {
-      "backgroundColor": "#FF9955",
-      "separatorColor": "#335566",
-      "separator": true
-    }
+    body: {
+      backgroundColor: card.bgColor || '#ffffff',
+      layout: 'vertical',
+      spacing: 'md',
+      type: 'box',
+      action: {
+        type: 'uri',
+        uri,
+      },
+      contents: [
+        {
+          color: card.titleColor || '#000000',
+          size: vcard.titleSize || 'xl',
+          text: card.title,
+          type: 'text',
+          weight: 'bold',
+          wrap: true,
+        },
+        {
+          color: card.descColor || '#000000',
+          size: vcard.descSize || 'sm',
+          text: card.desc,
+          type: 'text',
+          wrap: true,
+        },
+        ...(cardIdx ? [] : [{
+          height: '1px',
+          layout: 'vertical',
+          offsetStart: '0px',
+          offsetTop: '0px',
+          position: 'absolute',
+          type: 'box',
+          width: '1px',
+          contents: [{
+            align: 'center',
+            aspectMode: 'cover',
+            aspectRatio: '1:1',
+            gravity: 'center',
+            size: 'full',
+            type: 'image',
+            url: gaScreenView(vcard),
+          }],
+        }]),
+      ],
+    },
+    footer: {
+      backgroundColor: card.bgColor || '#ffffff',
+      layout: 'vertical',
+      spacing: 'sm',
+      type: 'box',
+      contents: _.map(card.btns, btn => renderBtn({ ...ctx, btn })),
+    },
   }
-},
-  }
+}
 function renderCarousel (ctx) {
   const { vcard } = ctx
   return {
