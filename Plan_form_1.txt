@@ -21,10 +21,12 @@ function escapeStr (str) {
   if (!_.isString(str)) return str
   return JSON.stringify(str).slice(1, -1)
 }
-%>
 
+function renderIonex (vcard) {
+  return [
 {
   "type": "bubble",
+  altText: `這是蔡承靜的電子名片，名片上有連結可以開啟。`,
   "size": "mega",
   "body": {
     "type": "box",
@@ -128,4 +130,9 @@ function escapeStr (str) {
       "separator": true
     }
   }
+},
+    { type: 'text', text: `這是${vcard.name_tw}的電子名片，名片上有連結可以開啟。` },
+  ]
 }
+print(JSON.stringify(renderIonex(_.mapValues(vcard, _.trim))))
+%>
