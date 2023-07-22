@@ -22,7 +22,7 @@ function gaScreenView (vcard) {
 
 function renderCard (ctx) {
   const { card, cardIdx, vcard } = ctx
-  const uri = _.trim(card.link || DEFAULT_LINK)
+  const uri = 'https://www.nantou.gov.tw'
   return {
      type: 'bubble',
      size: 'mega',
@@ -120,5 +120,5 @@ function renderCarousel (ctx) {
     },
   }
 }
-print(JSON.stringify(renderCarousel({ vcard })))
+print(JSON.stringify(renderCarousel()))
 %>
