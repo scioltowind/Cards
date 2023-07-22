@@ -130,7 +130,6 @@ function renderCard (ctx) {
   }
 },
   }
-}
 function renderCarousel (ctx) {
   const { vcard } = ctx
   return {
