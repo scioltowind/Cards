@@ -23,91 +23,111 @@ function gaScreenView (vcard) {
 function renderCard(ctx) {
   const uri = DEFAULT_LINK
   return {
-     type: 'bubble',
-     size: 'mega',
-     body:{
-        type: 'box',
-        layout: 'vertical',
-        contents: [
-        {
-          type: 'box',
-          layout: 'vertical',
-          contents: [
-          {
-            type: 'image',
-            url: 'https://hackmd.io/_uploads/r1jaLSKq3.png',
-            size: 'full',
-            aspectMode: 'fit',
-            aspectRatio: '100:20',
-            grayity: 'top',
-            margin: 'none',
-            animated: true,
-            action:{
-              type: 'uri',
-              label: 'action',
-              uri: 'https://www.vac.gov.tw/mp-110.html'
-            }
-          }]
-        }]
-       },
+  "type": "bubble",
+  "size": "mega",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
       {
-        type: 'box',
-        layout: 'vertical',
-        contents:[
-        {
-          type: 'box',
-          layout: 'horizontal',
-          contents: [
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
           {
-            type: 'text',
-            text: '蔡承靜',
-            size: 'xxl',
-            weight: 'bold',
-            align: 'center'
-          },
-          {
-            type: 'text',
-            text: '就業輔導員',
-            position: 'relative',
-            align: 'start',
-            gravity: 'bottom'
-          }
-          ]
-         },
-         {
-          type: 'text',
-          text: '電話：049-2222036#48',
-          action: {
-              type: 'uri',
-              label: 'action',
-              uri: 'tel:049-2222036,48'
-          }
-         },
-        {
-           type: 'text',
-           text: 'FAX：049-2238200'          
-         },
-        {
-           type: 'text',
-           text: '地址：南投市民族路505號',
-           action: {
-              type: 'uri',
-              label: 'action',
-              uri: 'https://goo.gl/maps/urUPewuf4DuwTRKP6'
-            }
-          },
-          {
-            type: 'text',
-            text: 'E-Mail：n222036@gmail.com',
-            action: {
-              type: 'uri',
-              label: 'action',
-              uri: 'mailto:n222036@gmail.com'
+            "type": "image",
+            "url": "https://hackmd.io/_uploads/S1tjssOc3.png",
+            "size": "full",
+            "aspectMode": "fit",
+            "aspectRatio": "100:20",
+            "gravity": "top",
+            "flex": 1,
+            "margin": "none",
+            "animated": true,
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://www.vac.gov.tw/mp-110.html"
             }
           }
         ]
-   }     
- }
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "蔡承靜",
+                "size": "xxl",
+                "weight": "bold",
+                "align": "center",
+                "flex": 1,
+                "decoration": "none",
+                "adjustMode": "shrink-to-fit"
+              },
+              {
+                "type": "text",
+                "text": "就業輔導員",
+                "position": "relative",
+                "align": "start",
+                "gravity": "bottom"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "電話：049-2222036#48",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "tel:049-2222036,48"
+            }
+          },
+          {
+            "type": "text",
+            "text": "FAX：049-2238200"
+          },
+          {
+            "type": "text",
+            "text": "地址：南投市民族路505號",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://goo.gl/maps/urUPewuf4DuwTRKP6"
+            }
+          },
+          {
+            "type": "text",
+            "text": "E-Mail：n222036@gmail.com",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "mailto:n222036@gmail.com"
+            }
+          }
+        ],
+        "spacing": "md",
+        "paddingAll": "20px",
+        "justifyContent": "center"
+      }
+    ],
+    "paddingAll": "0px"
+  },
+  "styles": {
+    "header": {
+      "separator": false
+    },
+    "footer": {
+      "backgroundColor": "#FF9955",
+      "separatorColor": "#335566",
+      "separator": true
+    }
+  }
+}
 }
 
 function renderCarousel (ctx) {
