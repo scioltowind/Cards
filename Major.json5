@@ -1,0 +1,23 @@
+{
+  altText: '這是 邱紹偉 的數位名片！',
+  btnHeight: 'md',
+  descSize: 'sm',
+  ratio: '1280:640',
+  titleSize: 'xl',
+  cards: [
+        {
+          bgColor: '#ffffff',
+          desc: '這是 邱紹偉 的數位名片！',
+          descColor: '#000000',
+          title: '數位版名片',
+          titleColor: '#000000',
+          name: '邱紹偉',
+          TEL: '049-222-2106#2100',
+          FAX: '049-220-2448',
+          Address: '540225 南投市中興路660號',
+          Email: 'wei777@nantou.gov.tw',
+          TitleName: '計畫處處長',
+          link: 'https://www.nantou.gov.tw/big5/content.asp?dptid=376480000AU210000&cid=126&cid1=351'
+        }
+      ]
+}
