@@ -14,7 +14,7 @@ function gaScreenView (vcard) {
         share_by: profile.userId ?? 'unknown',
         template_name: TEMPLATE_NAME,
         vcard_hash: hash,
-        vcard_name: _.get(vcard, 'cards.title'),
+        vcard_name: vcard.name,
       },
     }],
   })
@@ -52,5 +52,5 @@ function renderCard(ctx) {
    }     
 }
 
-print(JSON.stringify(renderCard()))
+print(JSON.stringify(renderCard({ vcard })))
 %>
