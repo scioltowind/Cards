@@ -21,7 +21,7 @@ function gaScreenView (vcard) {
 }
 
 function renderCard(ctx) {
-  const uri = 'https://www.nantou.gov.tw'
+  const uri = DEFAULT_LINK
   return {
      type: 'bubble',
      size: 'mega',
@@ -35,7 +35,7 @@ function renderCard(ctx) {
           contents: [
           {
             type: 'image',
-            url: 'https://hackmd.io/_uploads/S1tjssOc3.png',
+            url: 'https://imgur.com/z8tYckP',
             size: 'full',
             aspectMode: 'fit',
             aspectRatio: '100:20",
@@ -51,6 +51,16 @@ function renderCard(ctx) {
        }     
    }     
 }
-
-print(JSON.stringify(renderCard({ vcard })))
+function renderCarousel (ctx) {
+  const { vcard } = ctx
+  return {
+    type: 'flex',
+    altText: vcard.altText,
+    contents: {
+      type: 'carousel',
+      contents: _.map(vcard.cards, (card, cardIdx) => renderCard({ ...ctx, card, cardIdx })),
+    },
+  }
+}
+print(JSON.stringify(renderCarousel({ vcard })))
 %>
