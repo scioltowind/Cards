@@ -39,15 +39,15 @@ function renderCard(ctx) {
               {
                 "type": "text",
                 "text": "計畫處 處長",
-                "size": "xl",
+                "size": "lg",
                 "weight": "bold",
                 "align": "center",
-                "gravity": "bottom"
+                "offsetTop": "none"
               }
             ],
-            "offsetTop": "60px",
-            "maxHeight": "50px",
-            "paddingAll": "xs"
+            "offsetTop": "50px",
+            "paddingAll": "xs",
+            "maxHeight": "30px"
           },
           {
             "type": "image",
@@ -75,7 +75,7 @@ function renderCard(ctx) {
               {
                 "type": "text",
                 "text": "邱 紹 偉",
-                "size": "4xl",
+                "size": "3xl",
                 "weight": "bold",
                 "align": "center",
                 "flex": 1
@@ -84,7 +84,7 @@ function renderCard(ctx) {
                 "type": "text",
                 "text": "0979-592-777",
                 "align": "center",
-                "size": "25px",
+                "size": "18px",
                 "action": {
                   "type": "uri",
                   "label": "action",
@@ -119,7 +119,7 @@ function renderCard(ctx) {
                     "offsetBottom": "xl"
                   }
                 ],
-                "offsetTop": "1px",
+                "offsetTop": "5px",
                 "offsetStart": "1px",
                 "offsetEnd": "10px",
                 "paddingBottom": "xl",
@@ -162,16 +162,6 @@ function renderCard(ctx) {
                   "label": "action",
                   "uri": "mailto:wei777@nantou.gov.tw"
                 }
-              },
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": []
-              },
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": []
               }
             ],
             "spacing": "sm",
@@ -207,11 +197,11 @@ function renderCard(ctx) {
             }
           }
         ],
-        "offsetTop": "3px",
-        "backgroundColor": "#0000BB",
-        "offsetStart": "3px",
-        "offsetBottom": "3px",
-        "offsetEnd": "3px"
+        "offsetTop": "none",
+        "backgroundColor": "#FFFFFF",
+        "offsetStart": "none",
+        "offsetBottom": "none",
+        "offsetEnd": "none"
       }
     ],
     "paddingAll": "none",
@@ -220,7 +210,7 @@ function renderCard(ctx) {
     "cornerRadius": "md",
     "spacing": "none"
   },
-  "size": "giga",
+  "size": "mega",
   "styles": {
     "footer": {
       "backgroundColor": "#FFFFFF",
