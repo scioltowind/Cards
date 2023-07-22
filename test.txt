@@ -109,16 +109,5 @@ function renderCard(ctx) {
         }     
       }
 }
-function renderCarousel (ctx) {
-  const { vcard } = ctx
-  return {
-    type: 'flex',
-    altText: vcard.altText,
-    contents: {
-      type: 'carousel',
-      contents: _.map(vcard.cards, (card, cardIdx) => renderCard({ ...ctx, card, cardIdx })),
-    },
-  }
-}
 print(JSON.stringify(renderCard()))
 %>
