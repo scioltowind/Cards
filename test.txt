@@ -60,7 +60,7 @@ function renderCard (ctx) {
             animated: true,
             action:{
               type: 'uri',
-              uri: "https://www.vac.gov.tw/mp-110.html",
+              uri: "https://www.vac.gov.tw/mp-110.html"
             }
           }]
         }]
@@ -78,14 +78,14 @@ function renderCard (ctx) {
             text: '蔡承靜',
             size: 'xxl',
             weight: 'bold',
-            align: 'center',
+            align: 'center'
           },
           {
             type: 'text',
             text: '就業輔導員',
             position: 'relative',
             align: 'start,,
-            gravity: 'bottom',
+            gravity: 'bottom'
           }
         ]},
         {
@@ -122,7 +122,7 @@ function renderCard (ctx) {
          ]       
         }     
       }
-}   
+}
 function renderCarousel (ctx) {
   const { vcard } = ctx
   return {
