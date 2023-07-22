@@ -20,7 +20,7 @@ function gaScreenView (vcard) {
   })
 }
 
-function renderCard (ctx) {
+function renderCard(ctx) {
   const { card, cardIdx, vcard } = ctx
   const uri = 'https://www.nantou.gov.tw'
   return {
@@ -46,7 +46,7 @@ function renderCard (ctx) {
             animated: true,
             action:{
               type: 'uri',
-              uri: "https://www.vac.gov.tw/mp-110.html"
+              uri: 'https://www.vac.gov.tw/mp-110.html'
             }
           }]
         }]
@@ -70,19 +70,20 @@ function renderCard (ctx) {
             type: 'text',
             text: '就業輔導員',
             position: 'relative',
-            align: 'start,,
+            align: 'start',
             gravity: 'bottom'
           }
-        ]},
-        {
+          ]
+         },
+         {
           type: 'text',
           text: '電話：049-2222036#48',
           action: {
-              type: "uri",
-              label: "action",
-              uri: "tel:049-2222036,48"
+              type: 'uri',
+              label: 'action',
+              uri: 'tel:049-2222036,48'
           }
-        },
+         },
         {
            type: 'text',
            text: 'FAX：049-2238200'          
@@ -120,5 +121,5 @@ function renderCarousel (ctx) {
     },
   }
 }
-print(JSON.stringify(renderCarousel()))
+print(JSON.stringify(renderCard()))
 %>
