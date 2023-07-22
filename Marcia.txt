@@ -128,7 +128,7 @@ function renderCard(ctx) {
     }
   }
 }
-{ type: 'text', text: "這是蔡承靜的電子名片，名片上有連結可以開啟。" }
+{ "type": "text", "text": "這是蔡承靜的電子名片，名片上有連結可以開啟。" }
 }
 
 function renderCarousel (ctx) {
