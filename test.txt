@@ -44,6 +44,7 @@ function renderCard(ctx) {
             animated: true,
             action:{
               type: 'uri',
+              label: 'action',
               uri: 'https://www.vac.gov.tw/mp-110.html'
             }
           }]
