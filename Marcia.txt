@@ -35,7 +35,7 @@ function renderCard(ctx) {
         "contents": [
           {
             "type": "image",
-            "url": "https://hackmd.io/_uploads/S1tjssOc3.png",
+            "url": card.image,
             "size": "full",
             "aspectMode": "fit",
             "aspectRatio": "100:20",
@@ -46,7 +46,7 @@ function renderCard(ctx) {
             "action": {
               "type": "uri",
               "label": "action",
-              "uri": "https://www.vac.gov.tw/mp-110.html"
+              "uri": card.link
             }
           }
         ]
@@ -61,7 +61,7 @@ function renderCard(ctx) {
             "contents": [
               {
                 "type": "text",
-                "text": "蔡承靜",
+                "text": card.name,
                 "size": "xxl",
                 "weight": "bold",
                 "align": "center",
@@ -71,7 +71,7 @@ function renderCard(ctx) {
               },
               {
                 "type": "text",
-                "text": "就業輔導員",
+                "text": card.TitleName,
                 "position": "relative",
                 "align": "start",
                 "gravity": "bottom"
@@ -80,7 +80,7 @@ function renderCard(ctx) {
           },
           {
             "type": "text",
-            "text": "電話：049-2222036#48",
+            "text": card.TEL,
             "action": {
               "type": "uri",
               "label": "action",
@@ -89,11 +89,11 @@ function renderCard(ctx) {
           },
           {
             "type": "text",
-            "text": "FAX：049-2238200"
+            "text": card.FAX
           },
           {
             "type": "text",
-            "text": "地址：南投市民族路505號",
+            "text": card.Address,
             "action": {
               "type": "uri",
               "label": "action",
@@ -102,7 +102,7 @@ function renderCard(ctx) {
           },
           {
             "type": "text",
-            "text": "E-Mail：n222036@gmail.com",
+            "text": card.Email,
             "action": {
               "type": "uri",
               "label": "action",
