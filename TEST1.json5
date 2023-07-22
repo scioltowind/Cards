@@ -5,28 +5,112 @@
   ratio: '1280:640',
   titleSize: 'xl',
   cards: [
-    {
-      bgColor: '#ffffff',
-      desc: '由 LINE API 專家戴均民所開發，可免費製作及分享！',
-      descColor: '#000000',
-      image: 'https://i.imgur.com/1KZoSue.png',
-      link: 'https://taichunmin.idv.tw/liff-businesscard/',
-      title: 'LINE 數位版名片',
-      titleColor: '#000000',
-      btns: [
-        {
-          color: '#2d88ff',
-          link: 'https://lihi1.com/1N43q',
-          style: 'primary',
-          text: '📢 分享給朋友',
-        },
-        {
-          color: '#42659a',
-          link: 'https://lihi1.com/CVjIx/vcard20220324',
-          style: 'link',
-          text: '📖 技術討論群',
-        },
-      ],
+{
+  "type": "bubble",
+  altText: `這是蔡承靜的電子名片，名片上有連結可以開啟。`,
+  "size": "mega",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://hackmd.io/_uploads/S1tjssOc3.png",
+            "size": "full",
+            "aspectMode": "fit",
+            "aspectRatio": "100:20",
+            "gravity": "top",
+            "flex": 1,
+            "margin": "none",
+            "animated": true,
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://www.vac.gov.tw/mp-110.html"
+            }
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "蔡承靜",
+                "size": "xxl",
+                "weight": "bold",
+                "align": "center",
+                "flex": 1,
+                "decoration": "none",
+                "adjustMode": "shrink-to-fit"
+              },
+              {
+                "type": "text",
+                "text": "就業輔導員",
+                "position": "relative",
+                "align": "start",
+                "gravity": "bottom"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "電話：049-2222036#48",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "tel:049-2222036,48"
+            }
+          },
+          {
+            "type": "text",
+            "text": "FAX：049-2238200"
+          },
+          {
+            "type": "text",
+            "text": "地址：南投市民族路505號",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://goo.gl/maps/urUPewuf4DuwTRKP6"
+            }
+          },
+          {
+            "type": "text",
+            "text": "E-Mail：n222036@gmail.com",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "mailto:n222036@gmail.com"
+            }
+          }
+        ],
+        "spacing": "md",
+        "paddingAll": "20px",
+        "justifyContent": "center"
+      }
+    ],
+    "paddingAll": "0px"
+  },
+  "styles": {
+    "header": {
+      "separator": false
     },
+    "footer": {
+      "backgroundColor": "#FF9955",
+      "separatorColor": "#335566",
+      "separator": true
+    }
+  }
+},
   ],
 }
