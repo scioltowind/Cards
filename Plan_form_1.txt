@@ -85,7 +85,7 @@ function escapeStr (str) {
             "action": {
               "type": "uri",
               "label": "action",
-              "uri": "tel:049-2222036"
+              "uri": "tel:049-2222036,48"
             }
           },
           {
