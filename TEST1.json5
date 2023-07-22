@@ -5,20 +5,20 @@
   ratio: '1280:640',
   titleSize: 'xl',
   cards: [
-  {
-  bgColor: '#ffffff',
-  desc: '這是 蔡承靜 的數位名片！',
-  descColor: '#000000',
-  image: 'https://hackmd.io/_uploads/S1tjssOc3.png',
-  title: '數位版名片',
-  titleColor: '#000000',
-  name: '蔡承靜',
-  TEL: '049-2222036#48',
-  FAX: '049-2238200',
-  Address: '南投市民族路505號',
-  Email: 'n222036@gmail.com',
-  TitleName: '就業輔導員',
-  link: 'https://www.vac.gov.tw/mp-110.html'
-  }
-  ]
+        {
+          bgColor: '#ffffff',
+          desc: '這是 蔡承靜 的數位名片！',
+          descColor: '#000000',
+          image: 'https://hackmd.io/_uploads/S1tjssOc3.png',
+          title: '數位版名片',
+          titleColor: '#000000',
+          name: '蔡承靜',
+          TEL: '049-2222036#48',
+          FAX: '049-2238200',
+          Address: '南投市民族路505號',
+          Email: 'n222036@gmail.com',
+          TitleName: '就業輔導員',
+          link: 'https://www.vac.gov.tw/mp-110.html'
+        }
+      ]
 }
