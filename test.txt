@@ -19,27 +19,12 @@ function gaScreenView (vcard) {
     }],
   })
 }
-function renderBtn (ctx) {
-  const { btn, vcard } = ctx
-  const uri = _.trim(btn.link || DEFAULT_LINK)
-  return {
-    color: btn.color || '#17c950',
-    height: vcard.btnHeight || 'md',
-    style: btn.style || 'primary',
-    type: 'button',
-    action: {
-      label: btn.text || '預設按鈕文字',
-      type: 'uri',
-      uri,
-    },
-  }
-}
+
 function renderCard (ctx) {
   const { card, cardIdx, vcard } = ctx
   const uri = _.trim(card.link || DEFAULT_LINK)
   return {
   "type": "bubble",
-  altText: `這是蔡承靜的電子名片，名片上有連結可以開啟。`,
   "size": "mega",
   "body": {
     "type": "box",
