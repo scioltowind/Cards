@@ -35,7 +35,7 @@ function renderCard(ctx) {
         "contents": [
           {
             "type": "image",
-            "url": card.image,
+            "url": "https://i.imgur.com/z8tYckP.png",
             "size": "full",
             "aspectMode": "fit",
             "aspectRatio": "100:20",
@@ -46,7 +46,7 @@ function renderCard(ctx) {
             "action": {
               "type": "uri",
               "label": "action",
-              "uri": card.link
+              "uri": "https://www.vac.gov.tw/mp-110.html"
             }
           }
         ]
@@ -61,7 +61,7 @@ function renderCard(ctx) {
             "contents": [
               {
                 "type": "text",
-                "text": card.name,
+                "text": "蔡承靜",
                 "size": "xxl",
                 "weight": "bold",
                 "align": "center",
@@ -71,7 +71,7 @@ function renderCard(ctx) {
               },
               {
                 "type": "text",
-                "text": card.TitleName,
+                "text": "就業輔導員",
                 "position": "relative",
                 "align": "start",
                 "gravity": "bottom"
@@ -80,7 +80,7 @@ function renderCard(ctx) {
           },
           {
             "type": "text",
-            "text": card.TEL,
+            "text": "電話：049-2222036#48",
             "action": {
               "type": "uri",
               "label": "action",
@@ -89,11 +89,11 @@ function renderCard(ctx) {
           },
           {
             "type": "text",
-            "text": card.FAX
+            "text": "FAX：049-2238200"
           },
           {
             "type": "text",
-            "text": card.Address,
+            "text": "地址：南投市民族路505號",
             "action": {
               "type": "uri",
               "label": "action",
@@ -102,7 +102,7 @@ function renderCard(ctx) {
           },
           {
             "type": "text",
-            "text": card.Email,
+            "text": "E-Mail：n222036@gmail.com",
             "action": {
               "type": "uri",
               "label": "action",
@@ -128,6 +128,7 @@ function renderCard(ctx) {
     }
   }
 }
+{ type: 'text', text: "這是蔡承靜的電子名片，名片上有連結可以開啟。" }
 }
 
 function renderCarousel (ctx) {
@@ -141,5 +142,5 @@ function renderCarousel (ctx) {
     },
   }
 }
-print(JSON.stringify(renderCarousel ({ vcard })))
+print(JSON.stringify(renderCard ({ vcard })))
 %>
