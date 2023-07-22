@@ -1,0 +1,32 @@
+{
+  altText: '由 LINE API 專家戴均民所開發的 LINE 數位版名片，可免費製作及分享！',
+  btnHeight: 'md',
+  descSize: 'sm',
+  ratio: '1280:640',
+  titleSize: 'xl',
+  cards: [
+    {
+      bgColor: '#ffffff',
+      desc: '由 LINE API 專家戴均民所開發，可免費製作及分享！',
+      descColor: '#000000',
+      image: 'https://i.imgur.com/1KZoSue.png',
+      link: 'https://taichunmin.idv.tw/liff-businesscard/',
+      title: 'LINE 數位版名片',
+      titleColor: '#000000',
+      btns: [
+        {
+          color: '#2d88ff',
+          link: 'https://lihi1.com/1N43q',
+          style: 'primary',
+          text: '📢 分享給朋友',
+        },
+        {
+          color: '#42659a',
+          link: 'https://lihi1.com/CVjIx/vcard20220324',
+          style: 'link',
+          text: '📖 技術討論群',
+        },
+      ],
+    },
+  ],
+}
