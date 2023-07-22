@@ -1,4 +1,28 @@
-{
+<%
+/* global vcard */
+const DEFAULT_LINK = 'https://www.vac.gov.tw/mp-110.html'
+function gaScreenView (vcard) {
+  const TEMPLATE_NAME = '個人數位名片-2023/07/22'
+  let hash = CryptoJS.HmacMD5(JSON.stringify(vcard), TEMPLATE_NAME)
+  hash = CryptoJS.enc.Base64.stringify(hash).replace(/[+/=]/g, c => _.get({ '+': '-', '/': '_', '=': '' }, c))
+  return gtag.mpCollectUrl({
+    client_id: gtagClientId,
+    events: [{
+      name: 'template_impression',
+      params: {
+        session_id: gtagSessionId,
+        share_by: profile.userId ?? 'unknown',
+        template_name: TEMPLATE_NAME,
+        vcard_hash: hash,
+        vcard_name: vcard.name,
+      },
+    }],
+  })
+}
+
+function renderCard(ctx) {
+  const uri = DEFAULT_LINK
+  return{
   "type": "bubble",
   "body": {
     "type": "box",
@@ -204,3 +228,18 @@
     }
   }
 }
+}
+
+function renderCarousel (ctx) {
+  const { vcard } = ctx
+  return {
+    type: 'flex',
+    altText: vcard.altText,
+    contents: {
+      type: 'carousel',
+      contents: _.map(vcard.cards, (card, cardIdx) => renderCard({ ...ctx, card, cardIdx })),
+    },
+  }
+}
+print(JSON.stringify(renderCard ({ vcard })))
+%>
