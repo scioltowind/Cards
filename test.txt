@@ -40,7 +40,6 @@ function renderCard(ctx) {
             aspectMode: 'fit',
             aspectRatio: '100:20",
             grayity: 'top',
-            flex: 1,
             margin: 'none',
             animated: true,
             action:{
@@ -50,7 +49,8 @@ function renderCard(ctx) {
           }]
         }]
        }     
-        }     
-      }
+   }     
+}
+
 print(JSON.stringify(renderCard()))
 %>
