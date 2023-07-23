@@ -1,6 +1,6 @@
 <%
 /* global vcard */
-const DEFAULT_LINK = 'https://www.vac.gov.tw/mp-110.html'
+const DEFAULT_LINK = 'https://www.nantou.gov.tw'
 function gaScreenView (vcard) {
   const TEMPLATE_NAME = '個人數位名片-2023/07/22'
   let hash = CryptoJS.HmacMD5(JSON.stringify(vcard), TEMPLATE_NAME)
@@ -51,7 +51,7 @@ function renderCard(ctx) {
           },
           {
             "type": "image",
-            "url": "https://www.nantou.gov.tw/upload/42531_f5.png",
+            "url": "https://i.imgur.com/waseY22.png",
             "size": "full",
             "aspectMode": "fit",
             "aspectRatio": "150:80",
