@@ -24,6 +24,7 @@ function renderCard(ctx) {
   const uri = DEFAULT_LINK
   return{
   "type": "bubble",
+  "size": "mega",
   "body": {
     "type": "box",
     "layout": "vertical",
@@ -38,11 +39,28 @@ function renderCard(ctx) {
             "contents": [
               {
                 "type": "text",
+                "text": "南投縣政府",
+                "size": "20px",
+                "color": "#0000bb",
+                "weight": "bold",
+                "offsetStart": "7px"
+              },
+              {
+                "type": "text",
+                "text": "NANTOU COUNTY GOVERNMENT",
+                "size": "12px",
+                "color": "#0000bb",
+                "weight": "bold",
+                "offsetStart": "7px"
+              },
+              {
+                "type": "text",
                 "text": "計畫處資訊規劃科",
                 "size": "md",
                 "weight": "bold",
-                "align": "center",
-                "offsetTop": "none"
+                "align": "start",
+                "offsetTop": "1px",
+                "offsetStart": "7px"
               },
               {
                 "type": "text",
@@ -53,22 +71,9 @@ function renderCard(ctx) {
                 "offsetStart": "7px"
               }
             ],
-            "offsetTop": "30px",
+            "offsetTop": "10px",
             "paddingAll": "xs",
-            "maxHeight": "50px"
-          },
-          {
-            "type": "image",
-            "url": "https://i.imgur.com/waseY22.png",
-            "size": "full",
-            "aspectMode": "fit",
-            "aspectRatio": "150:80",
-            "gravity": "top",
-            "flex": 1,
-            "offsetTop": "none",
-            "offsetBottom": "none",
-            "align": "end",
-            "offsetStart": "xxl"
+            "height": "100px"
           }
         ]
       },
@@ -92,36 +97,6 @@ function renderCard(ctx) {
                 "type": "text",
                 "text": "Chen Liang Ting",
                 "align": "center"
-              },
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "南投縣政府",
-                    "color": "#0000bb",
-                    "weight": "bold",
-                    "size": "20px"
-                  },
-                  {
-                    "type": "text",
-                    "text": "NANTOU COUNTY GOVERNMENT",
-                    "color": "#0000bb",
-                    "size": "12px",
-                    "align": "start",
-                    "gravity": "bottom",
-                    "offsetTop": "1px",
-                    "weight": "bold",
-                    "offsetBottom": "xl"
-                  }
-                ],
-                "offsetTop": "5px",
-                "offsetStart": "1px",
-                "offsetEnd": "10px",
-                "paddingBottom": "xl",
-                "paddingAll": "none",
-                "paddingStart": "xl"
               }
             ]
           },
@@ -163,12 +138,19 @@ function renderCard(ctx) {
             ],
             "spacing": "sm",
             "margin": "none",
-            "paddingStart": "xl"
+            "offsetTop": "10px",
+            "paddingStart": "xl",
+            "height": "120px"
+          },
+          {
+            "type": "separator",
+            "color": "#ffffff"
           }
         ],
         "paddingAll": "xs",
         "spacing": "md",
-        "offsetTop": "none"
+        "offsetTop": "20px",
+        "maxHeight": "520px"
       },
       {
         "type": "box",
@@ -182,7 +164,7 @@ function renderCard(ctx) {
             "margin": "none",
             "aspectMode": "fit",
             "gravity": "top",
-            "aspectRatio": "100:45",
+            "aspectRatio": "100:50",
             "action": {
               "type": "uri",
               "label": "action",
@@ -203,7 +185,6 @@ function renderCard(ctx) {
     "cornerRadius": "md",
     "spacing": "none"
   },
-  "size": "mega",
   "styles": {
     "footer": {
       "backgroundColor": "#FFFFFF",
