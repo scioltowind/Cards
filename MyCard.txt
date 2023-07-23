@@ -24,7 +24,6 @@ function renderCard(ctx) {
   const uri = DEFAULT_LINK
   return{
   "type": "bubble",
-  "size": "mega",
   "body": {
     "type": "box",
     "layout": "vertical",
@@ -177,12 +176,6 @@ function renderCard(ctx) {
     "borderColor": "#0000BB",
     "cornerRadius": "md",
     "spacing": "none"
-  },
-  "styles": {
-    "footer": {
-      "backgroundColor": "#FFFFFF",
-      "separatorColor": "#55555555"
-    }
   }
 }
 }
