@@ -141,10 +141,6 @@ function renderCard(ctx) {
             "offsetTop": "10px",
             "paddingStart": "xl",
             "height": "120px"
-          },
-          {
-            "type": "separator",
-            "color": "#ffffff"
           }
         ],
         "paddingAll": "xs",
@@ -172,7 +168,7 @@ function renderCard(ctx) {
             }
           }
         ],
-        "offsetTop": "none",
+        "offsetTop": "10px",
         "backgroundColor": "#FFFFFF",
         "offsetStart": "none",
         "offsetBottom": "none",
