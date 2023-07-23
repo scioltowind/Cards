@@ -24,6 +24,7 @@ function renderCard(ctx) {
   const uri = DEFAULT_LINK
   return{
   "type": "bubble",
+  "size": "kilo",
   "body": {
     "type": "box",
     "layout": "vertical",
@@ -62,7 +63,8 @@ function renderCard(ctx) {
             "align": "end",
             "offsetStart": "xxl"
           }
-        ]
+        ],
+        "height": "80px"
       },
       {
         "type": "box",
@@ -119,7 +121,7 @@ function renderCard(ctx) {
                     "offsetBottom": "xl"
                   }
                 ],
-                "offsetTop": "5px",
+                "offsetTop": "10px",
                 "offsetStart": "1px",
                 "offsetEnd": "10px",
                 "paddingBottom": "xl",
@@ -166,16 +168,19 @@ function renderCard(ctx) {
             ],
             "spacing": "sm",
             "margin": "none",
-            "paddingStart": "xl"
+            "paddingStart": "xl",
+            "height": "100px",
+            "offsetTop": "10px"
           }
         ],
         "paddingAll": "xs",
         "spacing": "md",
-        "offsetTop": "none"
+        "offsetTop": "10px"
       },
       {
         "type": "separator",
-        "color": "#000000"
+        "color": "#000000",
+        "margin": "2px"
       },
       {
         "type": "box",
@@ -197,7 +202,7 @@ function renderCard(ctx) {
             }
           }
         ],
-        "offsetTop": "none",
+        "offsetTop": "10px",
         "backgroundColor": "#FFFFFF",
         "offsetStart": "none",
         "offsetBottom": "none",
@@ -210,7 +215,6 @@ function renderCard(ctx) {
     "cornerRadius": "md",
     "spacing": "none"
   },
-  "size": "mega",
   "styles": {
     "footer": {
       "backgroundColor": "#FFFFFF",
