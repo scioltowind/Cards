@@ -1,1 +1,229 @@
+<%
+/* global vcard */
+const DEFAULT_LINK = 'https://www.nantou.gov.tw'
+function gaScreenView (vcard) {
+  const TEMPLATE_NAME = '個人數位名片-2023/07/22'
+  let hash = CryptoJS.HmacMD5(JSON.stringify(vcard), TEMPLATE_NAME)
+  hash = CryptoJS.enc.Base64.stringify(hash).replace(/[+/=]/g, c => _.get({ '+': '-', '/': '_', '=': '' }, c))
+  return gtag.mpCollectUrl({
+    client_id: gtagClientId,
+    events: [{
+      name: 'template_impression',
+      params: {
+        session_id: gtagSessionId,
+        share_by: profile.userId ?? 'unknown',
+        template_name: TEMPLATE_NAME,
+        vcard_hash: hash,
+        vcard_name: vcard.name,
+      },
+    }],
+  })
+}
+
+function renderCard(ctx) {
+  const uri = DEFAULT_LINK
+  return{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "計畫處資訊規劃科",
+                "size": "md",
+                "weight": "bold",
+                "align": "center",
+                "offsetTop": "none"
+              },
+              {
+                "type": "text",
+                "text": " 分析師",
+                "weight": "bold",
+                "align": "start",
+                "offsetTop": "1px",
+                "offsetStart": "7px"
+              }
+            ],
+            "offsetTop": "30px",
+            "paddingAll": "xs",
+            "maxHeight": "50px"
+          },
+          {
+            "type": "image",
+            "url": "https://i.imgur.com/waseY22.png",
+            "size": "full",
+            "aspectMode": "fit",
+            "aspectRatio": "150:80",
+            "gravity": "top",
+            "flex": 1,
+            "offsetTop": "none",
+            "offsetBottom": "none",
+            "align": "end",
+            "offsetStart": "xxl"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "陳 亮 廷",
+                "size": "3xl",
+                "weight": "bold",
+                "align": "center",
+                "flex": 1
+              },
+              {
+                "type": "text",
+                "text": "Chen Liang Ting",
+                "align": "center"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "南投縣政府",
+                    "color": "#0000bb",
+                    "weight": "bold",
+                    "size": "20px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "NANTOU COUNTY GOVERNMENT",
+                    "color": "#0000bb",
+                    "size": "12px",
+                    "align": "start",
+                    "gravity": "bottom",
+                    "offsetTop": "1px",
+                    "weight": "bold",
+                    "offsetBottom": "xl"
+                  }
+                ],
+                "offsetTop": "5px",
+                "offsetStart": "1px",
+                "offsetEnd": "10px",
+                "paddingBottom": "xl",
+                "paddingAll": "none",
+                "paddingStart": "xl"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "540225 南投市中興路660號",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://goo.gl/maps/2hr29e2avobtdRL37"
+                }
+              },
+              {
+                "type": "text",
+                "text": "電話 049-224-6436",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "tel:0492246436"
+                }
+              },
+              {
+                "type": "text",
+                "text": "傳真 049-220-2448"
+              },
+              {
+                "type": "text",
+                "text": "Liang0112@nantou.gov.tw",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "mailto:Liang0112@nantou.gov.tw"
+                }
+              }
+            ],
+            "spacing": "sm",
+            "margin": "none",
+            "paddingStart": "xl"
+          }
+        ],
+        "paddingAll": "xs",
+        "spacing": "md",
+        "offsetTop": "none"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://i.imgur.com/8M1hmCH.png",
+            "size": "full",
+            "align": "start",
+            "margin": "none",
+            "aspectMode": "fit",
+            "gravity": "top",
+            "aspectRatio": "100:45",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://www.nantou.gov.tw"
+            }
+          }
+        ],
+        "offsetTop": "none",
+        "backgroundColor": "#FFFFFF",
+        "offsetStart": "none",
+        "offsetBottom": "none",
+        "offsetEnd": "none"
+      }
+    ],
+    "paddingAll": "none",
+    "borderWidth": "none",
+    "borderColor": "#0000BB",
+    "cornerRadius": "md",
+    "spacing": "none"
+  },
+  "size": "mega",
+  "styles": {
+    "footer": {
+      "backgroundColor": "#FFFFFF",
+      "separatorColor": "#55555555"
+    }
+  }
+}
+}
+
+function renderCarousel (ctx) {
+  const { vcard } = ctx
+  return {
+    type: 'flex',
+    altText: vcard.altText,
+    contents: {
+      type: 'carousel',
+      contents: _.map(vcard.cards, (card, cardIdx) => renderCard({ ...ctx, card, cardIdx })),
+    },
+  }
+}
+print(JSON.stringify(renderCard ({ vcard })))
+%>
 
