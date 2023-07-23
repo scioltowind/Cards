@@ -113,9 +113,23 @@ function renderCard(ctx) {
         "spacing": "md",
         "paddingAll": "20px",
         "justifyContent": "center"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "加入官方Line",
+          "uri": "https://liff.line.me/1645278921-kWRPP32q/?accountId=rll3478k"
+        },
+        "style": "primary"
       }
     ],
-    "paddingAll": "0px"
+    "paddingAll": "0px",
+    "action": {
+      "type": "uri",
+      "label": "加入官方Line",
+      "uri": "https://liff.line.me/1645278921-kWRPP32q/?accountId=rll3478k"
+    }
   },
   "styles": {
     "header": {
