@@ -1,1 +1,24 @@
-
+{
+  altText: '這是 陳亮廷 的數位名片！',
+  btnHeight: 'md',
+  descSize: 'sm',
+  ratio: '1280:640',
+  titleSize: 'xl',
+  cards: [
+        {
+          bgColor: '#ffffff',
+          desc: '這是 陳亮廷 的數位名片！',
+          descColor: '#000000',
+          image: 'https://www.nantou.gov.tw',
+          title: '數位版名片',
+          titleColor: '#000000',
+          name: '陳亮廷',
+          TEL: '049-2246436',
+          FAX: '049-220-2448',
+          Address: '南投市中興路660號',
+          Email: 'liang0112@nantou.gov.tw',
+          TitleName: '分析師',
+          link: 'https://www.nantou.gov.tw'
+        }
+      ]
+}
