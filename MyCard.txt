@@ -141,7 +141,12 @@ function renderCard(ctx) {
                 "gravity": "top",
                 "aspectMode": "fit",
                 "aspectRatio": "200:150",
-                "size": "xl"
+                "size": "xl",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://www.nantou.gov.tw"
+                }
               }
             ],
             "spacing": "sm",
