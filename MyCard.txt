@@ -133,42 +133,27 @@ function renderCard(ctx) {
                   "label": "action",
                   "uri": "mailto:Liang0112@nantou.gov.tw"
                 }
+              },
+              {
+                "type": "image",
+                "url": "https://i.imgur.com/8M1hmCH.png",
+                "align": "center",
+                "gravity": "top",
+                "aspectMode": "fit",
+                "aspectRatio": "200:150",
+                "size": "xl"
               }
             ],
             "spacing": "sm",
             "margin": "none",
-            "offsetTop": "10px",
-            "paddingStart": "xl",
-            "height": "120px"
+            "offsetTop": "20px",
+            "height": "250px",
+            "paddingStart": "xl"
           }
         ],
         "paddingAll": "xs",
         "spacing": "md",
-        "offsetTop": "20px",
-        "maxHeight": "520px"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://i.imgur.com/8M1hmCH.png",
-            "size": "4xl",
-            "action": {
-              "type": "uri",
-              "label": "action",
-              "uri": "https://www.nantou.gov.tw"
-            },
-            "aspectMode": "fit",
-            "gravity": "top"
-          }
-        ],
-        "offsetTop": "10px",
-        "backgroundColor": "#FFFFFF",
-        "offsetStart": "none",
-        "offsetBottom": "none",
-        "offsetEnd": "none"
+        "offsetTop": "20px"
       }
     ],
     "paddingAll": "none",
@@ -176,7 +161,8 @@ function renderCard(ctx) {
     "borderColor": "#0000BB",
     "cornerRadius": "md",
     "spacing": "none"
-  }
+  },
+  "size": "hecto"
 }
 }
 
