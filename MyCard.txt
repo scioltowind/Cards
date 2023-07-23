@@ -150,22 +150,19 @@ function renderCard(ctx) {
       },
       {
         "type": "box",
-        "layout": "horizontal",
+        "layout": "vertical",
         "contents": [
           {
             "type": "image",
             "url": "https://i.imgur.com/8M1hmCH.png",
-            "size": "full",
-            "align": "start",
-            "margin": "none",
-            "aspectMode": "fit",
-            "gravity": "top",
-            "aspectRatio": "100:50",
+            "size": "4xl",
             "action": {
               "type": "uri",
               "label": "action",
               "uri": "https://www.nantou.gov.tw"
-            }
+            },
+            "aspectMode": "fit",
+            "gravity": "top"
           }
         ],
         "offsetTop": "10px",
