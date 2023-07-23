@@ -105,7 +105,7 @@ function renderCard(ctx) {
             "contents": [
               {
                 "type": "text",
-                "text": "540225 南投市中興路660號",
+                "text": "🏢 南投市中興路660號",
                 "action": {
                   "type": "uri",
                   "label": "action",
@@ -114,7 +114,7 @@ function renderCard(ctx) {
               },
               {
                 "type": "text",
-                "text": "電話 049-224-6436",
+                "text": "☎️ 049-224-6436",
                 "action": {
                   "type": "uri",
                   "label": "action",
@@ -123,11 +123,11 @@ function renderCard(ctx) {
               },
               {
                 "type": "text",
-                "text": "傳真 049-220-2448"
+                "text": "📠 049-220-2448"
               },
               {
                 "type": "text",
-                "text": "Liang0112@nantou.gov.tw",
+                "text": "📨 Liang0112@nantou.gov.tw",
                 "action": {
                   "type": "uri",
                   "label": "action",
