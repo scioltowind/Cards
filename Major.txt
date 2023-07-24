@@ -178,11 +178,6 @@ function renderCard(ctx) {
         "offsetTop": "10px"
       },
       {
-        "type": "separator",
-        "color": "#000000",
-        "margin": "2px"
-      },
-      {
         "type": "box",
         "layout": "horizontal",
         "contents": [
