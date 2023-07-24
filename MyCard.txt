@@ -24,6 +24,7 @@ function renderCard(ctx) {
   const uri = DEFAULT_LINK
   return{
   "type": "bubble",
+  "size": "hecto",
   "body": {
     "type": "box",
     "layout": "vertical",
@@ -133,41 +134,34 @@ function renderCard(ctx) {
                   "label": "action",
                   "uri": "mailto:Liang0112@nantou.gov.tw"
                 }
-              },
-              {
-                "type": "image",
-                "url": "https://i.imgur.com/H0H1AVJ.jpg",
-                "align": "center",
-                "gravity": "top",
-                "aspectMode": "fit",
-                "aspectRatio": "200:150",
-                "size": "xl",
-                "action": {
-                  "type": "uri",
-                  "label": "action",
-                  "uri": "https://www.nantou.gov.tw"
-                }
               }
             ],
             "spacing": "sm",
             "margin": "none",
             "offsetTop": "20px",
-            "height": "250px",
             "paddingStart": "xl"
+          },
+          {
+            "type": "image",
+            "url": "https://i.imgur.com/H0H1AVJ.jpg",
+            "size": "full",
+            "margin": "none",
+            "aspectMode": "cover",
+            "aspectRatio": "120:70",
+            "offsetTop": "30px"
           }
         ],
         "paddingAll": "xs",
         "spacing": "md",
-        "offsetTop": "20px"
+        "offsetTop": "20px",
+        "height": "350px",
+        "cornerRadius": "md"
       }
     ],
     "paddingAll": "none",
     "borderWidth": "none",
-    "borderColor": "#0000BB",
-    "cornerRadius": "md",
-    "spacing": "none"
-  },
-  "size": "hecto"
+    "borderColor": "#0000BB"
+  }
 }
 }
 
