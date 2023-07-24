@@ -136,7 +136,7 @@ function renderCard(ctx) {
               },
               {
                 "type": "image",
-                "url": "https://i.imgur.com/8M1hmCH.png",
+                "url": "https://i.imgur.com/H0H1AVJ.jpg",
                 "align": "center",
                 "gravity": "top",
                 "aspectMode": "fit",
