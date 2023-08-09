@@ -24,7 +24,7 @@ function renderCard(ctx) {
   const uri = DEFAULT_LINK
   return{
   "type": "bubble",
-  "size": "kilo",
+  "size": "hecto",
   "body": {
     "type": "box",
     "layout": "vertical",
@@ -43,7 +43,8 @@ function renderCard(ctx) {
                 "size": "lg",
                 "weight": "bold",
                 "align": "center",
-                "offsetTop": "none"
+                "offsetTop": "0px",
+                "position": "relative"
               }
             ],
             "offsetTop": "50px",
@@ -55,7 +56,7 @@ function renderCard(ctx) {
             "url": "https://i.imgur.com/waseY22.png",
             "size": "full",
             "aspectMode": "fit",
-            "aspectRatio": "150:80",
+            "aspectRatio": "110:80",
             "gravity": "top",
             "flex": 1,
             "offsetTop": "none",
@@ -99,7 +100,7 @@ function renderCard(ctx) {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "南投縣政府",
+                    "text": "南投縣政府________",
                     "color": "#0000bb",
                     "weight": "bold",
                     "size": "20px",
@@ -113,7 +114,7 @@ function renderCard(ctx) {
                     "type": "text",
                     "text": "NANTOU COUNTY GOVERNMENT",
                     "color": "#0000bb",
-                    "size": "12px",
+                    "size": "9px",
                     "align": "start",
                     "gravity": "bottom",
                     "offsetTop": "1px",
@@ -141,20 +142,23 @@ function renderCard(ctx) {
                   "type": "uri",
                   "label": "action",
                   "uri": "https://goo.gl/maps/2hr29e2avobtdRL37"
-                }
+                },
+                "offsetBottom": "2px"
               },
               {
                 "type": "text",
-                "text": "電話 049-222-2106#2100",
+                "text": "電話：049-222-2106#2100",
                 "action": {
                   "type": "uri",
                   "label": "action",
                   "uri": "tel:0492222106,2100"
-                }
+                },
+                "offsetBottom": "2px"
               },
               {
                 "type": "text",
-                "text": "傳真 049-220-2448"
+                "text": "傳真：049-220-2448",
+                "offsetBottom": "2px"
               },
               {
                 "type": "text",
@@ -163,7 +167,8 @@ function renderCard(ctx) {
                   "type": "uri",
                   "label": "action",
                   "uri": "mailto:wei777@nantou.gov.tw"
-                }
+                },
+                "offsetBottom": "6px"
               }
             ],
             "spacing": "sm",
@@ -209,6 +214,17 @@ function renderCard(ctx) {
     "borderColor": "#0000BB",
     "cornerRadius": "md",
     "spacing": "none"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "貼心提醒：名片上聯絡資訊可以開啟",
+        "size": "12px"
+      }
+    ]
   },
   "styles": {
     "footer": {
