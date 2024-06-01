@@ -55,7 +55,7 @@ function renderCard(ctx) {
               },
               {
                 "type": "text",
-                "text": "計畫處資訊規劃科",
+                "text": "計畫處資訊規劃及研究發展科",
                 "size": "md",
                 "weight": "bold",
                 "align": "start",
@@ -64,7 +64,7 @@ function renderCard(ctx) {
               },
               {
                 "type": "text",
-                "text": " 分析師",
+                "text": " 專 員",
                 "weight": "bold",
                 "align": "start",
                 "offsetTop": "1px",
