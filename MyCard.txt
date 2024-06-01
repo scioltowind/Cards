@@ -64,7 +64,7 @@ function renderCard(ctx) {
               },
               {
                 "type": "text",
-                "text": " 專 員",
+                "text": "專 員",
                 "weight": "bold",
                 "align": "start",
                 "offsetTop": "1px",
