@@ -1,0 +1,64 @@
+{
+  "page": 0,
+  "json5": {
+    "altText": "請在手機上查看數位版名片。",
+    "btnHeight": "sm",
+    "descSize": "md",
+    "ratio": "20:13",
+    "titleSize": "xl",
+    "cards": [
+      {
+        "bgColor": "#317ee1",
+        "desc": "南投縣政府計畫處長",
+        "descColor": "#000000",
+        "image": "https://lihi.cc/lufel",
+        "link": "https://www.nantou.gov.tw/big5/bureau/content.php?dptid=376480000au210000&cid=351",
+        "title": "邱紹偉",
+        "titleColor": "#317ee1",
+        "btns": [
+          {
+            "color": "#ff7145",
+            "link": "tel:049-2246436",
+            "style": "primary",
+            "text": "電話"
+          },
+          {
+            "color": "#ff7145",
+            "link": "https://www.nantou.gov.tw/big5/bureau/index.php?dptid=376480000au210000",
+            "style": "primary",
+            "text": "南投縣政府計畫處官網"
+          },
+          {
+            "color": "#ff7145",
+            "link": "mailto:nowhere@mozilla.org",
+            "style": "primary",
+            "text": "E-mail"
+          },
+          {
+            "color": "#ff7145",
+            "link": "https://lihi3.com/9xr4z",
+            "style": "primary",
+            "text": "分享給好友"
+          }
+        ]
+      },
+      {
+        "bgColor": "#ffffff",
+        "desc": "計畫處除置處長一人綜理處務外，並置副處長一人協助處長處理業務。另設綜合計畫科、管制考核科、為民服務科、研究發展科、資訊管理科、資訊規劃科等六科。",
+        "descColor": "#000000",
+        "image": "https://lihi3.com/Mh5WS",
+        "link": "https://www.nantou.gov.tw/big5/bureau/index.php?dptid=376480000AU210000",
+        "title": "計畫處組織介紹",
+        "titleColor": "#317ee1",
+        "btns": [
+          {
+            "color": "#ff7145",
+            "link": "https://www.nantou.gov.tw/big5/bureau/index.php?dptid=376480000AU210000",
+            "style": "primary",
+            "text": "南投縣政府計畫處"
+          }
+        ]
+      }
+    ]
+  }
+}
